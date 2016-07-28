@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>carousel</title>
+<style>
+/* reset */
+html{ overflow-y:scroll;}
+body{ font-size:12px; color:#666; font-family: \5b8b\4f53,sans-serif,"Microsoft YaHei", Arial, Verdana, Helvetica; padding: 30px;}
+body,dl,dd,h1,h2,h3,h4,h5,h6,p,form{ margin:0;}
+ol,ul,fieldset,input,textarea,blockquote{ margin:0; padding:0;}
+img{ vertical-align:middle; border:none;}
+ol,ul { list-style:none;}
+li{ list-style-type:none;}
+input{ vertical-align:middle;}
+address,cite,code,em,th{ font-weight:normal; font-style:normal;}
+h1,h2,h3,h4,h5,h6,input,select,textarea,th,td{font-size:12px; font-weight:normal;}
+input{ vertical-align:middle;}
+table,td{ border-collapse:collapse;}
+table td{ empty-cells:show;}
+a{ color:#333; text-decoration:none;}
+a:hover{ color:#f00; text-decoration:underline;}
+/* class */
+.fb {font-weight:bold}
+.fi {font-style:italic}
+.linethrough {text-decoration:line-through}
+.f12px{ font-size:12px}
+.f14px{ font-size:14px}
+.f18px{ font-size:18px}
+.left{ float:left;}
+.right{ float:right;}
+.underline{ text-decoration:underline;}
+.clearfix{ zoom:1}
+.clearfix:after{ display:block; clear:both; content:""; visibility:hidden; height:0;}
+
+.move{
+	width: 700px;
+	height: 400px;
+	overflow: hidden;
+}
+.move li{
+	float: left;
+	display: inline;
+	width: 698px;
+	height: 398px;
+	line-height: 398px;
+	border: #ddd 1px solid;
+	border-radius: 5px;
+	font-size: 100px;
+	text-align: center;
+}
+.num li,#prev,#next{
+	float: left;
+	border: #ddd 1px solid;
+	padding: 3px 8px;
+	margin: 10px 10px 0 0;
+	cursor: pointer;
+}
+.num .on{
+	background-color: #333;
+	color: #fff;
+}
+</style>
+</head>
+
+<body>
+<div class="carousel" data-trigger="carousel" data-options="{'move':'#move','num':'#num','next':'#next','prev':'#prev','time':2000,'auto':false}">
+	<div class="move" id="move">
+		<ul class="clearfix">
+			<li>1</li>
+			<li>2</li>			
+			<li>3</li>		
+			<li>4</li>
+		</ul>
+	</div>
+	<div class="num" id="num">
+		<ul class="clearfix">
+			<li class="on">1</li>
+			<li>2</li>
+			<li>3</li>		
+			<li>4</li>
+		</ul>
+	</div>
+	<a href="" id="prev">prev</a>
+	<a href="" id="next">next</a>
+</div>
+
+<script type="text/javascript" src="lib/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="src/carousel.js"></script>
+</body>
+</html>
