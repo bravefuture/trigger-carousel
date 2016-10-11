@@ -1,5 +1,5 @@
-# trigger-tab
-## tab切换
+# trigger-carousel
+## 轮播图
 html结构：
 ```html
 <div class="carousel" data-trigger="carousel" data-options="{'move':'#move','num':'#num','next':'#next','prev':'#prev','time':2000,'auto':false}">
